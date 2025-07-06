@@ -44,7 +44,7 @@ def save(filename:str)->str:
         filename = f"{filename}.txt"
 
     try:
-        with open(filename,'w') as file:
+        with open('/workspaces/LangGraph-Course-freeCodeCamp/practice/exercies/AgentsPractice/'+filename,'w') as file:
             file.write(document_content)
         print(f'\n Document has been saved to :',{filename})
         return f'Document has been saved successfully to {filename}.'
@@ -75,7 +75,7 @@ def our_agent(state:AgentState)->AgentState:
         print("\n USER:{user_input}")
         user_message = HumanMessage(content=user_input)
 
-    all_messages = [system_prompt] + list(state['messages'])+user_message
+    all_messages = [system_prompt] + list(state['messages'])+ [user_message]
 
     response = model.invoke(all_messages)
 
@@ -84,9 +84,9 @@ def our_agent(state:AgentState)->AgentState:
     #if tool call happen print it
 
     if hasattr(response,'tool_calls') and response.tool_calls:
-        print(f'Using Tools:{[tc.name for tc in response.tool_calls]}')
+        print(f'Using Tools:{[tc['name'] for tc in response.tool_calls]}')
 
-    return {'messages':list(state['message']) + [user_message,response]}
+    return {'messages':list(state['messages']) + [user_message,response]}
 
 
 def should_continue(state:AgentState) -> str:

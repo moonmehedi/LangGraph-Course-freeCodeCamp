@@ -1,0 +1,46 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Environment variables
+.env
+
+# VS Code settings
+.vscode/
+
+# Python virtual environments
+venv/
+.env/
+.venv/
+ENV/
+env/
+ 
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Log files
+*.log
+
+# Test output
+htmlcov/
+.coverage
+.tox/
+.nox/
+.cache/
+pytest_cache/
+
+# Misc
+*.swp
+*.bak
+*.tmp
+
+# Ignore saved documents and generated text files
+*.txt
+
+# Ignore any user data or conversation
