@@ -1,0 +1,10 @@
+Your conversation Log : 
+you:hello dear how are you?My name is Moon
+AI: Hello Moon! I’m doing well, thank you. How are you?
+
+you:can you tell me which model is more powerful gpt-4o-mini or gpt-4.1-mini?
+AI: As of my last update, there is no official model called "GPT-4o-mini." However, GPT-4.1-mini refers to a variant of the GPT-4 model. Typically, newer iterations of models (like GPT-4.1) would contain improvements in performance, efficiency, or capabilities over earlier versions. 
+
+If you're looking for specific details about their performance or differences, I recommend checking the latest official OpenAI documentation or announcements, as they will provide the most accurate and up-to-date information.
+
+End Of Conversation
